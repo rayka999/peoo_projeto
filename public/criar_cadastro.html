@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Cliente</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Cadastro de Novo Cliente</h1>
+    </header>
+
+    <section id="formulario-cadastro">
+        <form action="/cadastrar" method="POST">
+            <label for="nome">Nome Completo</label>
+            <input type="text" id="nome" name="nome" required>
+
+            <label for="cpf">CPF</label>
+            <input type="text" id="cpf" name="cpf" required>
+
+            <label for="email">E-mail</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="telefone">Telefone</label>
+            <input type="text" id="telefone" name="telefone" required>
+
+            <label for="endereco">Endereço</label>
+            <input type="text" id="endereco" name="endereco" required>
+
+            <label for="dataNascimento">Data de Nascimento</label>
+            <input type="date" id="dataNascimento" name="dataNascimento" required>
+
+            <button type="submit">Cadastrar</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Hotel XYZ - Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>

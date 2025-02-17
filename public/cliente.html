@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Área do Cliente</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Bem-vindo, Cliente</h1>
+        <nav>
+            <a href="#reservar">Reservar Quarto</a>
+            <a href="#meus-feedbacks">Meus Feedbacks</a>
+        </nav>
+    </header>
+
+    <section id="reservar">
+        <h2>Reservar um Quarto</h2>
+        <form action="/reservar" method="POST">
+            <label for="tipoQuarto">Tipo de Quarto</label>
+            <select id="tipoQuarto" name="tipoQuarto">
+                <!-- Opções de tipos de quartos -->
+            </select>
+
+            <label for="dataEntrada">Data de Entrada</label>
+            <input type="date" id="dataEntrada" name="dataEntrada" required>
+
+            <label for="dataSaida">Data de Saída</label>
+            <input type="date" id="dataSaida" name="dataSaida" required>
+
+            <button type="submit">Reservar</button>
+        </form>
+    </section>
+
+    <section id="meus-feedbacks">
+        <h2>Avalie o Hotel</h2>
+        <form action="/feedback" method="POST">
+            <label for="nota">Nota do Hotel</label>
+            <input type="number" id="nota" name="nota" min="1" max="5" required>
+
+            <label for="observacoes">Observações</label>
+            <textarea id="observacoes" name="observacoes" required></textarea>
+
+            <button type="submit">Enviar Feedback</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Hotel XYZ - Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>

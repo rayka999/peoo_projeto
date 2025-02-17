@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de login</title>
+    <link rel="stylesheet" href='style.css'>
+</head>
+<body>
+    <!-- Título -->
+    <h1>Fazer login</h1>
+
+    <!-- Formulário -->
+    <form id="loginForm">
+        <label for="opcoes">Entrar como:</label>
+        <select id="opcoes" name="opcoes" required>
+            <option value="" disabled selected>Selecione...</option>
+            <option value="gerente">Gerente</option>
+            <option value='cliente'>Cliente</option>
+        </select>
+
+        <label for="login">CPF:</label>
+        <input type="text" id="login" name="login" placeholder="Digite seu CPF..." required>
+
+        <button type="button" onclick="Login()">ENTRAR</button>
+
+        
+        <div class="link-container">
+            <label>Não é cadastrado(a)? Clique no botão abaixo:</label>
+            <a href="criar-cadastro.html">Criar cadastro</a>
+            <label >Dúvidas sobre a qualidade do nosso hotel? Clique abaixo e confira nossos feedbacks!</label>
+            <a href="feedbacks.html">feedbacks</a>
+        </div>
+    </form>
+    <script src="index.js"></script>
+</body>
+</html>
